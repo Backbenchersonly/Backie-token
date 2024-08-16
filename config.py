@@ -35,7 +35,7 @@ SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Zipshort.net")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "be510fb8cbf0eeee0e1b9bc14fe591938819ef28")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","https://t.me/unfiltered_backup")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/BackbenchersBackup/9")
 
 
 #force sub channel id, if you want enable force sub
