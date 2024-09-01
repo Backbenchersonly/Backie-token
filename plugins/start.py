@@ -34,7 +34,7 @@ from shortzy import Shortzy
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
-    owner_id = ADMINS + ['5447083924']  # Fetch the owner's ID from config
+    owner_id = ADMINS + ['7092346282']  # Fetch the owner's ID from config
 
     # Check if the user is the owner
     if id == owner_id:
@@ -60,7 +60,7 @@ async def start_command(client: Client, message: Message):
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
-            await message.reply(f"â Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
+            await message.reply(f"â Your token successfully verified and valid for: 14 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
 
         elif len(message.text) > 7 and verify_status['is_verified']:
             try:
@@ -205,7 +205,7 @@ async def get_users(client: Bot, message: Message):
     users = await full_userbase()
     await msg.edit(f"{len(users)} users are using this bot")
 
-@Bot.on_message(filters.private & filters.command('broadcast') & filters.user(ADMINS + ['5447083924']))
+@Bot.on_message(filters.private & filters.command('broadcast') & filters.user(ADMINS + ['7092346282']))
 async def send_text(client: Bot, message: Message):
     if message.reply_to_message:
         query = await full_userbase()
