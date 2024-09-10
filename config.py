@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7240800947:AAGyAGc-LzhMjqdiz1MlXToypSZUGsz7Oh4")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6993157185:AAF0cLcdRcGjdTI67L56l5AzTPE8iSdeirY")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "24262361"))
+APP_ID = int(os.environ.get("APP_ID", "20170562"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "6dc187358c7edf4c2040cf3fd6c1a834")
+API_HASH = os.environ.get("API_HASH", "56aa61b4d1198329f24c1602eb3f73d4")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002052559454"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002239557483"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7092346282"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7066319676"))
 
 #Port
 PORT = os.environ.get("PORT", "1112")
@@ -38,7 +38,7 @@ IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001981603944"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002157194885"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -46,7 +46,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7092346282").split()):
+    for x in (os.environ.get("ADMINS", "7066319676").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -67,7 +67,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7092346282)
+ADMINS.append(7066319676)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
