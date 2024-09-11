@@ -31,8 +31,8 @@ PORT = os.environ.get("PORT", "1112")
 DB_URI = "mongodb+srv://Bapusarkarbjppvt:HU8jDvgoGuUJv6yI@cluster0.khf1x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Krishnalink.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "eaafaf591db44bf48b80634450b1508c52c0a09b")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "instantearn.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "a7c245a6dcea5049e95f634707cfdf2088d1da54")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 50400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 
