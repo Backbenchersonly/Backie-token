@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7503631368:AAFAq8gZoGSvryawfH6YiyBolOgBcDE2L78")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7215729449:AAEu1GHFF6kt1Mlk3l9TjTCN58aiXuGbA6w")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29862293"))
@@ -31,8 +31,8 @@ PORT = os.environ.get("PORT", "1112")
 DB_URI = "mongodb+srv://Backbenchersnevakakms:PLs5YvLbUYWRJXk8@cluster0.u3mmn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "tyrano-shortener.in")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "573cf3412c46648705cfe935b79e734abaf4a206")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "shortxlinks.com/")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "ed1a4fc18ddd4e915ebb8468a96ae3bb39752adf")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE',50400 )) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 
